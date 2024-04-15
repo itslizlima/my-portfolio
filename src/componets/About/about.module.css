@@ -1,0 +1,147 @@
+@import "../../vars.css";
+
+.container {
+    position: sticky;
+    background-color: #6201ffe2;
+    background-size: 20%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin-top: 20%;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: none;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    margin-top: -10%;
+    margin-bottom: 5%;
+    padding-left: 1%;
+    
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-text);
+    margin-top: 8%;
+    margin-bottom: 5%;
+    font-size: large;
+    
+}
+
+.text p{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: center;
+    letter-spacing: 1.2px;
+    text-size-adjust: 40px;
+    
+    
+}
+
+.profileImg{
+   margin-right: 0%;
+   margin-left: 0%;
+   margin-top: -3%;
+    
+}
+/*tentativa de add efeito digitação
+.text p{
+    color: var(--color-text);
+    float: right;
+    margin-bottom: 110px;
+    justify-content: center;
+
+  }*/
+  .finaltxt {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-size: 30px;
+    align-items: center;
+    
+    
+  }
+
+  button{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    font-size: 33px;
+    margin-top: 3%;
+    cursor: pointer;
+   
+  }
+
+  button:hover{
+    background-color: rgb(210, 75, 255);
+    
+  }
+  
+
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+  @keyframes type{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+  } 
+  
+  ::selection{
+    background: black;
+  }
+  
+
+
+
+
+
+
+@media screen and (max-width: 830px) {
+    .container {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content {
+        flex-direction: column;
+    
+    }
+    .aboutImage {
+        display: none;
+    }
+    .aboutItems{
+        margin-top: 29px;
+    }
+    .aboutItem{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .profileImg{
+        max-width: 100px;
+    }
+
+}

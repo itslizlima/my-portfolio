@@ -1,0 +1,35 @@
+[
+    {
+        "title": "HTML5",
+        "imageSrc": "skills/Html5.png"
+    },
+    {
+        "title": "CSS3",
+        "imageSrc":"skills/CSS3.png"
+    },
+    {
+        "title": "JavaScript",
+        "imageSrc":"skills/JavaScriptLogo.png"
+    },
+    {
+        "title": "ReactJS",
+        "imageSrc":"skills/React.png"
+    },
+    {
+        "title": "JSON",
+        "imageSrc":"skills/JSON.png"
+    },
+    {
+        "title": "SASS",
+        "imageSrc":"skills/Sass.png"
+    },
+    {
+        "title": "Figma",
+        "imageSrc": "skills/Figma.png"
+    },
+    {
+        "title": "Canva",
+        "imageSrc":"skills/Canva.png"
+    }
+    
+]

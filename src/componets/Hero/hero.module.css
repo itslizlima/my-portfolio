@@ -1,0 +1,197 @@
+@import "../../vars.css";
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 900;
+    margin-top: 3%;
+    margin-bottom: -7%;
+    padding-top: 5%;
+    font-family: var(--font-outfit);
+    background: linear-gradient(
+        -90deg,
+        rgb(172, 37, 255) 35%,
+        rgb(79, 3, 255) 95%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.titleH2{
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 32px;
+    padding-top: 5%;
+    text-align: center;
+    font-family: var(--font-outfit);
+    background: linear-gradient(
+        -90deg,
+        rgb(98, 0, 255) 35%,
+        rgba(136, 61, 248, 0.92) 95%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.profileImg{
+
+    width: 50%;  
+    max-width: 250px;
+    padding: 5px 0px 30px 10px;
+  
+    
+}
+   
+.description {
+    font-size: 30px;
+    font-family: var(--font-outfit);
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 2px;
+    text-align: center;
+    padding-top: 5%;
+    animation-duration: 3s;
+    animation-name: slidein;
+    
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    75% {
+      font-size: 300%;
+      margin-left: 5%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: -39.5%;
+      width: 150%;
+      
+    }
+  }
+
+
+  
+
+.heroImg {
+    width: 50%;
+    z-index: 1;
+    gap: 11px;
+   
+    
+   
+}
+
+.topBlur {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    right: 45vw;
+    border-radius: 500px;
+    background: rgba(0, 2, 4, 0.368);
+    filter: blur(400px);
+    z-index: 1;
+}
+
+
+
+
+@media screen and (max-width: 830px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        align-items: center;
+    }
+    .profileImg{
+
+        width: 50%;  
+        max-width: 250px;
+        display: flex;
+        align-self: center;
+       z-index: 1;
+    }
+
+    /*testando responsividade*/
+    .title {
+        font-size: 60px;
+        font-weight: 900;
+        margin-bottom: 10px;
+        font-family: var(--font-outfit);
+        background: linear-gradient(
+            -90deg,
+            rgb(172, 37, 255) 35%,
+            rgb(79, 3, 255) 95%
+        );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    .titleH2{
+        font-size: 35px;
+        font-weight: 900;
+        margin-bottom: 32px;
+        text-align: center;
+        font-family: var(--font-outfit);
+        background: linear-gradient(
+            -90deg,
+            rgb(98, 0, 255) 35%,
+            rgba(136, 61, 248, 0.92) 95%
+        );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+       
+    .description {
+        font-size: 25px;
+        font-family: var(--font-outfit);
+        margin-bottom: 60px;
+        text-align: center;
+        padding-top: 0%;
+        animation-duration: 4s;
+        animation-name: slidein;
+        
+      }
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 100%;
+        }
+      
+        75% {
+          font-size: 200%;
+          margin-left: 5%;
+          width: 130%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+          
+        }
+      }
+}

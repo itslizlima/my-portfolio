@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Teamwork",
+        "imageSrc":"skills/Puzzle.png"
+    },
+    {
+        "title": "Effective communication",
+        "imageSrc":"skills/Speech.png"
+    },
+    {
+        "title": "Creativity",
+        "imageSrc":"skills/Idea.png"
+    },
+    {
+        "title": "Adaptability",
+        "imageSrc":"skills/Search.png"
+    },
+    {
+        "title": "Problem-solving",
+        "imageSrc":"skills/Settings.png"
+    },
+    {
+        "title": "Positive Attitude",
+        "imageSrc":"skills/Checkmark.png"
+    }
+    
+]
